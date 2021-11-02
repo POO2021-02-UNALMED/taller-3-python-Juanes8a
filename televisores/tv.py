@@ -7,7 +7,7 @@ class TV:
        self._estado=False
        self._volumen=1
        self._control=control
-
+       TV.numTV+=1 
     @classmethod
     def setNumTV(cls,numTV):
         cls._numTV=numTV 
