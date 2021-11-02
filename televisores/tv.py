@@ -9,7 +9,7 @@ class TV:
        self._control=control
 
     @classmethod
-    def setNumTv(cls,numTV):
+    def setNumTV(cls,numTV):
         cls._numTV=numTV    
     def getNumTV(self):
         return TV.numTV    
