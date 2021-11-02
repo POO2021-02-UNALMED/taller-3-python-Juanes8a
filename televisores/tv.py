@@ -10,9 +10,9 @@ class TV:
 
     @classmethod
     def setNumTV(cls,numTV):
-        cls._numTV=numTV    
+        cls._numTV=numTV        
     def getNumTV(self):
-        return TV.numTV    
+        return self._numTV    
 
     def setMarca(self,marca):
         self._marca=marca    
