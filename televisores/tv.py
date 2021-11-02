@@ -50,15 +50,15 @@ class TV:
 
     def volumenUp(self):
         if(self._estado==True and self._volumen>=0 and self._volumen<7): 
-            return TV.setVolumen((TV.getVolumen())+1)
+            self._volumen+=1
     def volumenDown(self):
         if(self._estado==True and self._volumen>0 and self._volumen<=7): 
-            return TV.setVolumen((TV.getVolumen())-1)
+            self._volumen-=1
 
 
     def canalUp(self):
         if(self._estado==True and self._canal>=1 and self._canal<120): 
-            return TV.setCanal((TV.getCanal())+1)
+            self._canal+=1
     def canalDown(self):
         if(self._estado==True and self._canal>1 and self._canal<=120): 
-            return TV.setCanal((TV.getCanal())-1)        
+            self._canal-=1        
