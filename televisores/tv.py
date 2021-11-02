@@ -8,8 +8,9 @@ class TV:
        self._volumen=1
        self._control=control
 
-    def setNumTv(self,numTV):
-        TV.numTV=numTV    
+    @classmethod
+    def setNumTv(cls,numTV):
+        cls._numTV=numTV    
     def getNumTV(self):
         return TV.numTV    
 
