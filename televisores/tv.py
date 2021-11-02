@@ -41,7 +41,7 @@ class TV:
         return self._volumen
 
     def getEstado(self):
-        return self._volumen
+        return self._estado
     def turnOn(self):
         return self._estado==True
     def turnOff(self):
