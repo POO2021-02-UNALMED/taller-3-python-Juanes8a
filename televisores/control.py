@@ -2,10 +2,10 @@ from televisores.tv import TV
 
 class Control:
     def __init__(self) :
-        pass  
+        self._tv=None
     def enlazar(self,tele):
         self._tv=tele    
-
+        tele.setControl(self)
     def turnOn(self):
         return TV.turnOn      
     def turnOff(self):
