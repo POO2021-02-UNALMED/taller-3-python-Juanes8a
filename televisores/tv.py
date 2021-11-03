@@ -45,9 +45,9 @@ class TV:
     def getEstado(self):
         return self._estado
     def turnOn(self):
-        return self._estado==True
+        self._estado=True
     def turnOff(self):
-        return self._estado==False
+        self._estado=False
 
     def volumenUp(self):
         if(self._estado==True and self._volumen>=0 and self._volumen<7): 
