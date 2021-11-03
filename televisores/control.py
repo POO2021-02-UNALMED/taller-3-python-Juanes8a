@@ -7,22 +7,22 @@ class Control:
         self._tv=tele    
         tele.setControl(self)
     def turnOn(self):
-        return TV.turnOn()      
+        return TV.turnOn(self)      
     def turnOff(self):
-        return TV.turnOff()   
+        return TV.turnOff(self)   
 
     def setCanal(self,canal):
         self._canal=canal
 
     def canalUp(self):
-        return TV.canalUp()     
+        return TV.canalUp(self)     
     def canalDown(self):
-        return TV.canalDown()
+        return TV.canalDown(self)
 
     def volumenUp(self):
-        return TV.volumenUp()     
+        return TV.volumenUp(self)     
     def volumenDown(self):
-        return TV.volumenDown() 
+        return TV.volumenDown(self) 
 
     def getTv(self):
         return self._tv
